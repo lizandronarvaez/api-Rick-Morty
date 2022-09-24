@@ -12,6 +12,7 @@
 }
 
 @media (max-width: 425px) {
+
     .nav>h1,
     h2 {
         font-size: 1em;
