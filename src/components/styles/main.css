@@ -13,7 +13,7 @@
 .main>input {
     width: 40%;
     margin-top: 2em;
-    margin-bottom: 2em;
+    margin-bottom: 4em;
     font-size: 1.2em;
     font-weight: bold;
     padding: .5em 0;
@@ -22,7 +22,7 @@
 .tablePersonajes tbody {
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
-    grid-gap: 1.5em 8em;
+    grid-gap: 5em 8em;
 }
 
 .tablePersonajes td {
@@ -36,10 +36,14 @@
     font-size: 1.4em;
     cursor: pointer;
     border-style: solid;
+    font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
 }
 
+.tablePersonajes tr:hover{
+    transform: translateY(-40px);
+    box-shadow: 10px 15px 100px rgba(0, 0, 0, 1);
+}
 .tablePersonajes td:last-child {
-    background: none;
     width: auto;
 }
 

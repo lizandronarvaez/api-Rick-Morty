@@ -13,6 +13,7 @@ const Main = () => {
     const response = await fetch(URL);
     const data = await response.json();
     const datas = data.results;
+    console.log(datas)
     setPersonajes(datas);
   };
   // Metodo filtrado
@@ -51,6 +52,8 @@ const Main = () => {
                 <img src={personaje.image} alt="name" />
                 <a href="{personaje}">{console.log(personajes)}</a>
               </td>
+              <td>Tipo de Personaje: {personaje.species}</td>
+              <td>{personaje.status}</td>
             </tr>
           ))}
         </tbody>
