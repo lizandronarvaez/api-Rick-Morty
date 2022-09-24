@@ -6,6 +6,18 @@
     align-items: center;
     padding: 0 1.5em;
 }
+
 .nav>img {
     width: 200px;
+}
+
+@media (max-width: 425px) {
+    .nav>h1,
+    h2 {
+        font-size: 1em;
+    }
+
+    .nav>img {
+        width: 100px;
+    }
 }

@@ -42,3 +42,30 @@
     cursor: pointer;
     border-radius: 50%;
 }
+
+@media (max-width:425px){
+    .main{
+        height: 600px;
+    }
+    .main>input{
+        width: 90%;
+        height:8px;
+    }
+    .tablePersonajes tbody{
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        gap: 1em .5em;
+    }
+    .tablePersonajes td{
+        display: flex;
+        justify-content: center;
+        background-color: #000;
+        border-radius: 5px;
+        color: #fff;
+        font-size: 1em;
+        cursor: pointer;
+    }
+    .tablePersonajes img{
+        width: 90px;
+    }
+  }
