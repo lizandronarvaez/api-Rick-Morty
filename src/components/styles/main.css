@@ -16,7 +16,7 @@
     margin-bottom: 4em;
     font-size: 1.2em;
     font-weight: bold;
-    padding: .5em 0;
+    padding: .5em .5em;
 }
 
 .tablePersonajes tbody {
@@ -68,7 +68,7 @@
     .tablePersonajes tbody {
         display: grid;
         grid-template-columns: 1fr 1fr;
-        gap: 1.5em 1em;
+        gap: 4em 1em;
         padding: 0 2em;
     }
 
@@ -76,12 +76,13 @@
         display: flex;
         justify-content: center;
         background-color: #000;
-        border-radius: 5px;
+        border-radius: 15px;
         color: #fff;
-        font-size: 1em;
+        font-size: 0.99em;
         cursor: pointer;
         width: 95%;
-
+        text-align: center;
+        padding: .2em;
     }
 
     .tablePersonajes img {
