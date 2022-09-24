@@ -1,0 +1,44 @@
+.main {
+    height:110vh;
+    background-image: url('https://i.blogs.es/669147/ram-s6-key--rt-1920x1080/840_560.jpeg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+    padding:0 0 15em 0;
+}
+
+.main>input {
+    width: 40%;
+    margin-top: 2em;
+    margin-bottom: 2em;
+    font-size: 1.2em;
+    font-weight: bold;
+    padding: .5em 0;
+}
+.tablePersonajes tbody{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    grid-gap: 1.5em 8em;
+}
+
+.tablePersonajes td{
+    display: flex;
+    justify-content: space-around;
+    background-color: #000;
+    border-radius: 5px;
+    color: #fff;
+    font-size: 1.4em;
+    cursor: pointer;
+}
+.tablePersonajes td:last-child{
+    background: none;
+    width: auto;
+}
+.tablePersonajes img{
+    width: 120px;
+    cursor: pointer;
+    border-radius: 50%;
+}
