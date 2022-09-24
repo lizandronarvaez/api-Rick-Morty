@@ -13,7 +13,7 @@ const Main = () => {
     const response = await fetch(URL);
     const data = await response.json();
     const datas = data.results;
-    console.log(datas)
+    console.log(datas);
     setPersonajes(datas);
   };
   // Metodo filtrado

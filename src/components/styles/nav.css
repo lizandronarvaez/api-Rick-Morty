@@ -6,10 +6,12 @@
     align-items: center;
     padding: 0 1.5em;
 }
-.nav>h1{
+
+.nav>h1 {
     font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
     letter-spacing: .3em;
 }
+
 .nav>img {
     width: 200px;
 }
