@@ -45,7 +45,7 @@
 
 @media (max-width:425px){
     .main{
-        height: 600px;
+        height: 900px;
     }
     .main>input{
         width: 90%;
