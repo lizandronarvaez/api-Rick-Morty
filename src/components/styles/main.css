@@ -40,8 +40,9 @@
 }
 
 .tablePersonajes tr:hover {
-    transform: translateY(-40px);
+    transform: scale(1.2);
     box-shadow: 10px 15px 100px rgba(0, 0, 0, 1);
+
 }
 
 .tablePersonajes td:last-child {
@@ -53,6 +54,9 @@
     height: auto;
     cursor: pointer;
     border-radius: 0 0 5px 5px;
+}
+.tablePersonajes img:hover{
+    
 }
 
 @media (max-width:425px) {
