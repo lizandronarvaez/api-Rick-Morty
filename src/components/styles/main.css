@@ -1,96 +1,43 @@
-.main {
-    height: auto;
-    background-image: url('https://i.blogs.es/669147/ram-s6-key--rt-1920x1080/840_560.jpeg');
-    background-repeat: no-repeat;
-    background-size: cover;
+.contenido {
+    background: #FF8008;  /* fallback for old browsers */
+    background: -webkit-linear-gradient(to right, #FFC837, #FF8008);  /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(to right, #FFC837, #FF8008); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+    max-width: 95%;
+    margin: 2rem auto;
+}
+
+.contenido-buscador {
     display: flex;
-    flex-direction: column;
-    justify-content: flex-start;
-    align-items: center;
-    padding: 0 0 35em 0;
+    padding: 3rem;
 }
 
-.main>input {
-    width: 40%;
-    margin-top: 2em;
-    margin-bottom: 4em;
-    font-size: 1.2em;
-    font-weight: bold;
-    padding: .5em .5em;
-}
-
-.tablePersonajes tbody {
-    display: grid;
-    grid-template-columns: 1fr 1fr 1fr;
-    grid-gap: 5em 8em;
-}
-
-.tablePersonajes td {
-    width: 98%;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    background-color: #fff;
-    border-radius: 5px 5px 0 0;
-    color: #000;
-    font-size: 1.4em;
-    cursor: pointer;
-    border-style: solid;
-    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
-}
-
-.tablePersonajes tr:hover {
-    transform: scale(1.2);
-    box-shadow: 10px 15px 100px rgba(0, 0, 0, 1);
-
-}
-
-.tablePersonajes td:last-child {
-    width: auto;
-}
-
-.tablePersonajes img {
+.contenido-buscador__input {
     width: 100%;
-    height: auto;
-    cursor: pointer;
-    border-radius: 0 0 5px 5px;
-}
-.tablePersonajes img:hover{
-    
+    padding: 1rem;
 }
 
-@media (max-width:425px) {
-    .main {
-        height: auto;
-        padding-bottom: 40em;
-    }
-
-    .main>input {
-        width: 90%;
-        height: 8px;
-    }
-
-    .tablePersonajes tbody {
+@media (min-width: 768px) {
+    .contenido-personajes {
         display: grid;
-        grid-template-columns: 1fr 1fr;
-        gap: 4em 1em;
-        padding: 0 2em;
+        grid-template-columns: 1fr 1fr 1fr;
+        gap: 3rem;
     }
-
-    .tablePersonajes td {
-        display: flex;
-        justify-content: center;
-        background-color: #000;
-        border-radius: 15px;
-        color: #fff;
-        font-size: 0.99em;
-        cursor: pointer;
-        width: 95%;
-        text-align: center;
-        padding: .2em;
-    }
-
-    .tablePersonajes img {
-        width: 100%;
-    }
+}
+.contenido-personajes{
+    padding: 2rem;
+}
+.personaje-img{
+    width: 100%;
+}
+.personaje{
+    position: relative;
+    margin-bottom: 5rem;
+}
+.informacion-personaje{
+    text-align: center;
+    background-color: #fff;
+    margin: -5rem auto 0 auto;
+    position: absolute;
+    width: 90%;
+    left: 1rem;
 }

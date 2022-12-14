@@ -36,28 +36,29 @@ const Main = () => {
   }, []);
   //renderizacion de la vista
   return (
-    <div className="main">
-      <input
-        type="text"
-        value={buscar}
-        onChange={busquedaPersonaje}
-        placeholder="Introduce un personaje"
-      />
-      <table className="tablePersonajes">
-        <tbody>
-          {data.map((personaje) => (
-            <tr key={personaje.id}>
-              <td>{personaje.name}</td>
-              <td>
-                <img src={personaje.image} alt="name" />
-                <a href="{personaje}">{console.log(personajes)}</a>
-              </td>
-              <td>Tipo de Personaje: {personaje.species}</td>
-              <td>{personaje.status}</td>
-            </tr>
-          ))}
-        </tbody>
-      </table>
+    <div className="contenido">
+      {
+      }
+      <div className="contenido-buscador">
+        <input className="contenido-buscador__input"
+          type="text"
+          value={buscar}
+          onChange={busquedaPersonaje}
+          placeholder="Introduce un personaje"
+        />
+      </div>
+      <div className="contenido-personajes">
+        {data.map((personaje) => (
+          <div className="personaje" key={personaje.id}>
+            <img className="personaje-img" src={personaje.image} alt="name" />
+            <div className="informacion-personaje">
+              <p className="informacion-personaje__nombre">{personaje.name}</p>
+              <p className="informacion-personaje__tipo">Tipo de Personaje: {personaje.species}</p>
+              <p className="informacion-personaje__status">{personaje.status}</p>
+            </div>
+          </div>
+        ))}
+      </div>
     </div>
   );
 };
